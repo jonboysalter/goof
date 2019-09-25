@@ -1,0 +1,53 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:ejs:20161128':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+  'npm:ejs:20161130':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+  'npm:ejs:20161130-1':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+  'npm:hoek:20180212':
+    - tap > codecov.io > request > hawk > hoek:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+    - tap > codecov.io > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+    - tap > codecov.io > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+    - tap > codecov.io > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+  'npm:qs:20170213':
+    - tap > codecov.io > request > qs:
+        reason: None given
+        expires: '2019-10-25T08:48:42.408Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2019-09-25T08:47:08.390Z'
+  'npm:http-signature:20150122':
+    - tap > codecov.io > request > http-signature:
+        patched: '2019-09-25T08:47:08.390Z'
+  'npm:mime:20170907':
+    - tap > codecov.io > request > form-data > mime:
+        patched: '2019-09-25T08:47:08.390Z'
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        patched: '2019-09-25T08:47:08.390Z'
+  'npm:request:20160119':
+    - tap > codecov.io > request:
+        patched: '2019-09-25T08:47:08.390Z'
+  'npm:tunnel-agent:20170305':
+    - tap > codecov.io > request > tunnel-agent:
+        patched: '2019-09-25T08:47:08.390Z'
