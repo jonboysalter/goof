@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:ejs:20161128':
@@ -51,3 +51,50 @@ patch:
   'npm:tunnel-agent:20170305':
     - tap > codecov.io > request > tunnel-agent:
         patched: '2019-09-25T08:47:08.390Z'
+  SNYK-JS-LODASH-567746:
+    - tap > nyc > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - tap > nyc > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - mongoose > async > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2020-05-01T01:34:16.403Z'
